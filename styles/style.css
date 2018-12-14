@@ -55,9 +55,37 @@ button {
   background-color: orange;
   padding: 8px 20px;
   border: none;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 button:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px 32px;
+}
+
+.card p {
+  color: gray;
+}
+
+.side-img {
+  width: 1000px;
+  height: 250px;
+  background-color: lightgrey;
+}
+
+.side-img p {
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+
+p {
+  line-height: 2em;
 }
