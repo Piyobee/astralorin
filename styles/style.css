@@ -1,6 +1,7 @@
 body {
   font-family: 'Share Tech Mono', 'Courier New', Courier, monospace;
   margin: 0 100px;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .hero-bg {
@@ -10,7 +11,18 @@ body {
   width: 100%;
   height: 480px;
   z-index: -10;
-  background-color: purple;
+  background-image: url('../images/space_bg_cut.jpg');
+  /*background-color: purple;*/
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav p, .top-nav nav {
+  color: white;
+  margin: auto;
 }
 
 nav li {
@@ -25,6 +37,11 @@ nav a {
 }
 
 nav a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.current {
   text-decoration: underline;
 }
 
@@ -39,6 +56,11 @@ h1 {
 
 h2 {
   color: white;
+}
+
+h1, h2, h3 {
+ font-family: 'Ultrasonik', sans-serif;
+ letter-spacing: 0.2em;
 }
 
 .hero-div {
@@ -59,8 +81,11 @@ button {
 }
 
 button:hover {
+  font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
+  transition-duration: 1s;
+  background-color: navy;
 }
 
 .card {
@@ -70,14 +95,22 @@ button:hover {
   padding: 20px 32px;
 }
 
+.card h3 {
+ font-size: 28px;
+}
+
 .card p {
   color: gray;
+  font-weight: bold;
 }
 
 .side-img {
   width: 1000px;
   height: 250px;
   background-color: lightgrey;
+  position: relative;
+  top: -64px;
+  right: -64px;
 }
 
 .side-img p {
